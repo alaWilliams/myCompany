@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+html { 
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.main-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 31%);
+  color:hsl(0, 0%, 100%);
+  height: 50px;
+}
+
+.company-name {
+  font-weight: 700;
+  padding: 0 5rem;
+  
+}
+
+.navbar-right {
+  display: flex;
+  font-weight: 300;
+  padding: 0 5rem;
+}
+
+.nav-item {
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+.disabled > a {
+  pointer-events: none;
+}
+
+.disabled:hover { 
+  cursor:not-allowed;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(./background-img.jpg);
+  background-color: hsl(0, 0%, 50%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:hsl(0, 0%, 100%)
+}
+
+.header > * {
+  width: 50%;
+}
+
+.header-container-left > * {
+  margin: 2rem; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color:hsl(0, 0%, 100%)
+}
+
+.btn {
+  background-color: transparent;
+  border: 3px solid white;
+  color:hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.btn-offer {
+  padding: 2rem 3rem;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color:hsl(0, 0%, 0%);
+  transition: 1s linear;
+}
+.about-us {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.offer {
+  background-color: hsla(208, 31%, 36%)
+}
+
+.offer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.5rem;
+  align-items: center;
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.offer-item {
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid black;
+  width: 11rem;
+  height: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 10px hsl(209, 30%, 28%);
+}
+
+.offer-item:hover {
+  transform: scale(1.05);
+  transition: 0.5s linear;
+}
+
+section {
+  padding: 0 3rem;
+}
+
+.section-title {
+  padding: 3rem;
+}
