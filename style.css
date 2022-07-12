@@ -1,3 +1,4 @@
+/* General styles*/
 * {
   box-sizing: border-box;
 }
@@ -13,6 +14,26 @@ body {
   width: 960px;
   margin: 0 auto;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section, footer {
+  padding: 0 3rem;
+}
+.section-title {
+  padding: 3rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color:hsl(0, 0%, 100%)
+}
+
+/*navbar styles*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -38,11 +59,6 @@ body {
   padding: 0 2rem;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .disabled {
   cursor: not-allowed;
 }
@@ -54,6 +70,7 @@ a {
   cursor:not-allowed;
 }
 
+/*Header styles*/
 .header {
   height: 100vh;
   background-image: url(./background-img.jpg);
@@ -73,12 +90,7 @@ a {
 }
 
 .header-container-left > * {
-  margin: 2rem; }
-
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color:hsl(0, 0%, 100%)
+  margin: 1.5rem 0;
 }
 
 .btn {
@@ -96,12 +108,54 @@ h1 {
   color:hsl(0, 0%, 0%);
   transition: 1s linear;
 }
+
+/*About us styles*/
 .about-us {
   background-color: hsl(0, 0%, 95%);
 }
 
+.about-us > h1 {
+  color: hsla(207, 51%, 17%);
+}
+
+.employee-name {
+  font-weight: 700;
+}
+
+.picture {
+  background-color: rebeccapurple;
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+}
+
+.employee-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee:nth-of-type(even) {
+  text-align: right;
+}
+
+/*Offer styles*/
 .offer {
-  background-color: hsla(208, 31%, 36%)
+  background-color: hsla(208, 31%, 36%);
+  height: 37rem;
+}
+
+.pic-one {
+  background-image: url(./emp-img1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pic-two {
+  background-image: url(./emp-img2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .offer-content {
@@ -129,10 +183,24 @@ h1 {
   transition: 0.5s linear;
 }
 
-section {
-  padding: 0 3rem;
+
+
+/* Footer styles*/
+.footer {
+  height: 4rem;
+  background-color: hsl(0, 0%, 31%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
 }
 
-.section-title {
-  padding: 3rem;
+.footer-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-brands {
+  height: 2rem;
+  width: 2rem;
 }
