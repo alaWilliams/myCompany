@@ -123,20 +123,16 @@ h1 {
 }
 
 .picture {
-  background-color: rebeccapurple;
+  background-color: #405D78;
   height: 11rem;
   width: 11rem;
   border-radius: 50%;
 }
 
-.employee-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .employee:nth-of-type(even) {
   text-align: right;
 }
+
 
 /*Offer styles*/
 .offer {
@@ -182,7 +178,13 @@ h1 {
   transform: scale(1.05);
   transition: 0.5s linear;
 }
-
+.ellipse {
+  width: 22px;
+  height: 22px;
+  background-color: hsl(11, 67%, 64%);
+  border-radius: 50%;
+  position: absolute;
+}
 
 
 /* Footer styles*/
