@@ -1,13 +1,13 @@
 /* General styles*/
 * {
   box-sizing: border-box;
-}
-html { 
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .main-container {
@@ -23,6 +23,7 @@ a {
 section, footer {
   padding: 0 3rem;
 }
+
 .section-title {
   padding: 3rem 0;
 }
@@ -98,6 +99,8 @@ h1 {
   border: 3px solid white;
   color:hsl(0, 0%, 100%);
   font-weight: 700;
+  height: 2.5rem;
+  width: 10rem;
 }
 .btn-offer {
   padding: 2rem 3rem;
@@ -110,34 +113,19 @@ h1 {
 }
 
 /*About us styles*/
-.about-us {
-  background-color: hsl(0, 0%, 95%);
-}
-
 .about-us > h1 {
   color: hsla(207, 51%, 17%);
 }
 
-.employee-name {
+.employee-info {
   font-weight: 700;
 }
 
 .picture {
   background-color: #405D78;
-  height: 11rem;
-  width: 11rem;
+  height: 12rem;
+  width: 12rem;
   border-radius: 50%;
-}
-
-.employee:nth-of-type(even) {
-  text-align: right;
-}
-
-
-/*Offer styles*/
-.offer {
-  background-color: hsla(208, 31%, 36%);
-  height: 37rem;
 }
 
 .pic-one {
@@ -145,6 +133,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-right: 2rem;
 }
 
 .pic-two {
@@ -152,7 +141,29 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-left: 2rem;
 }
+
+.employee:nth-of-type(even) {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+ .employee {
+  display: flex;
+  margin: 2rem;
+ }
+
+ .employee-wrapper > * {
+  margin-top: 1rem;
+ }
+
+/*Offer styles*/
+.offer {
+  background-color: hsla(208, 31%, 36%);
+  height: 37rem;
+}
+
 
 .offer-content {
   display: grid;
@@ -178,12 +189,19 @@ h1 {
   transform: scale(1.05);
   transition: 0.5s linear;
 }
+
+.new-item {
+  position: relative;
+}
+
 .ellipse {
   width: 22px;
   height: 22px;
   background-color: hsl(11, 67%, 64%);
   border-radius: 50%;
   position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
 }
 
 
@@ -202,7 +220,12 @@ h1 {
   align-items: center;
 }
 
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .fa-brands {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
