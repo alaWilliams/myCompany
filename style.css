@@ -20,7 +20,7 @@ a {
   color: inherit;
 }
 
-section, footer {
+.footer, .shadow > *, .about-us, .offer {
   padding: 0 3rem;
 }
 
@@ -31,7 +31,8 @@ section, footer {
 h1 {
   font-size: 2rem;
   font-weight: 700;
-  color:hsl(0, 0%, 100%)
+  color:hsl(0, 0%, 100%);
+  line-height: 2.5rem;
 }
 
 /*navbar styles*/
@@ -80,14 +81,7 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(80%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color:hsl(0, 0%, 100%)
-}
-
-.header > * {
-  width: 50%;
 }
 
 .header-container-left > * {
@@ -102,6 +96,7 @@ h1 {
   height: 2.5rem;
   width: 10rem;
 }
+
 .btn-offer {
   padding: 2rem 3rem;
 }
@@ -112,6 +107,18 @@ h1 {
   transition: 1s linear;
 }
 
+.shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  height: 100%;
+  width: 960px;
+}
+
+.shadow > * {
+  width: 50%;
+}
 /*About us styles*/
 .about-us > h1 {
   color: hsla(207, 51%, 17%);
@@ -164,7 +171,6 @@ h1 {
   height: 37rem;
 }
 
-
 .offer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -204,7 +210,6 @@ h1 {
   left: -0.5rem;
 }
 
-
 /* Footer styles*/
 .footer {
   height: 4rem;
@@ -225,7 +230,11 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.fa-brands {
+
+.fb, .instagram {
   height: 3rem;
   width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
