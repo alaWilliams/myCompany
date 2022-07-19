@@ -75,7 +75,7 @@ h1 {
 /*Header styles*/
 .header {
   height: 100vh;
-  background-image: url(./background-img.jpg);
+  background-image: url(./images/background-img.jpg);
   background-color: hsl(0, 0%, 50%);
   background-position: center;
   background-size: cover;
@@ -136,7 +136,7 @@ h1 {
 }
 
 .pic-one {
-  background-image: url(./emp-img1.webp);
+  background-image: url(./images/emp-img1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -144,7 +144,7 @@ h1 {
 }
 
 .pic-two {
-  background-image: url(./emp-img2.jpg);
+  background-image: url(./images/emp-img2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
