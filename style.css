@@ -20,22 +20,20 @@ a {
   color: inherit;
 }
 
+/* Setting section paddings equally */
 .footer, .shadow > *, .about-us, .offer {
   padding: 0 3rem;
 }
 
 .section-title {
   padding: 3rem 0;
-}
-
-h1 {
   font-size: 2rem;
   font-weight: 700;
   color:hsl(0, 0%, 100%);
   line-height: 2.5rem;
 }
 
-/*navbar styles*/
+/*Navbar styles*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -133,21 +131,18 @@ h1 {
   height: 12rem;
   width: 12rem;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .pic-one {
   background-image: url(./images/emp-img1.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   margin-right: 2rem;
 }
 
 .pic-two {
   background-image: url(./images/emp-img2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   margin-left: 2rem;
 }
 
