@@ -35,7 +35,6 @@ a {
 
 /*Navbar styles*/
 .navbar {
-  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +113,10 @@ a {
   height: 100%;
 }
 
-.shadow > * {
+.container-header {
+  display: flex;
+}
+.container-header > * {
   width: 50%;
 }
 /*About us styles*/
