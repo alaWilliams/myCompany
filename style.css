@@ -20,13 +20,11 @@ a {
   color: inherit;
 }
 
-/* Setting section paddings equally */
-.footer, .shadow > *, .about-us, .offer {
-  padding: 0 3rem;
+.header > *, .about-us, .offer, .footer {
+  padding: 3rem 3rem;
 }
-
 .section-title {
-  padding: 3rem 0;
+  margin-bottom: 3rem;
   font-size: 2rem;
   font-weight: 700;
   color:hsl(0, 0%, 100%);
@@ -45,18 +43,20 @@ a {
 
 .company-name {
   font-weight: 700;
-  padding: 0 3rem;
   
 }
 
 .navbar-right {
   display: flex;
   font-weight: 300;
-  padding: 0 5rem;
 }
 
 .nav-item {
   padding: 0 2rem;
+}
+
+.nav-item:last-child {
+  padding: 0 0 0 2rem;
 }
 
 .disabled {
@@ -93,6 +93,7 @@ a {
   font-weight: 700;
   height: 2.5rem;
   width: 10rem;
+  transition: 1s linear;
 }
 
 .btn-offer {
@@ -102,7 +103,6 @@ a {
 .btn:hover {
   background-color: hsl(0, 0%, 100%);
   color:hsl(0, 0%, 0%);
-  transition: 1s linear;
 }
 
 .shadow {
@@ -116,11 +116,11 @@ a {
 .container-header {
   display: flex;
 }
-.container-header > * {
+.header-container-left {
   width: 50%;
 }
 /*About us styles*/
-.about-us > .section-title {
+.about-us .section-title {
   color: hsla(207, 51%, 17%);
 }
 
@@ -146,6 +146,7 @@ a {
 .pic-two {
   background-image: url(./images/emp-img2.jpg);
   margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .employee:nth-of-type(even) {
@@ -155,7 +156,6 @@ a {
 
  .employee {
   display: flex;
-  margin: 2rem;
  }
 
  .employee-wrapper > * {
@@ -186,11 +186,12 @@ a {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0.5rem 10px hsl(209, 30%, 28%);
+  transition: 0.5s linear;
+  text-align: center;
 }
 
 .offer-item:hover {
   transform: scale(1.05);
-  transition: 0.5s linear;
 }
 
 .new-item {
