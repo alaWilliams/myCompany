@@ -20,8 +20,8 @@ a {
   color: inherit;
 }
 
-.header > *, .about-us, .offer, .footer {
-  padding: 3rem 3rem;
+.header > *, .about-us, .offer {
+  padding: 3rem 2rem;
 }
 .section-title {
   margin-bottom: 3rem;
@@ -79,10 +79,6 @@ a {
   background-repeat: no-repeat;
   filter: grayscale(80%);
   color:hsl(0, 0%, 100%)
-}
-
-.header-container-left > * {
-  margin: 1.5rem 0;
 }
 
 .btn {
@@ -145,7 +141,6 @@ a {
 .pic-two {
   background-image: url(./images/emp-img2.jpg);
   margin-left: 2rem;
-  margin-bottom: 2rem;
 }
 
 .employee:nth-of-type(even) {
@@ -155,10 +150,6 @@ a {
 
  .employee {
   display: flex;
- }
-
- .employee-wrapper > * {
-  margin-top: 1rem;
  }
 
 /*Offer styles*/
@@ -173,7 +164,6 @@ a {
   grid-gap: 3.5rem;
   align-items: center;
   width: 40rem;
-  margin: 0 auto;
 }
 
 .offer-item {
@@ -226,12 +216,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .fb, .instagram {
-  height: 3rem;
-  width: 3rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
